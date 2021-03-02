@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>JdbcControllerLogin</servlet-name>
+        <servlet-class>controller.JdbcControllerLogin</servlet-class>
+        
+        <init-param>
+  		<param-name>jdbcClassName</param-name>
+  		<param-value>org.apache.derby.jdbc.ClientDriver</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>dbUserName</param-name>
+  		<param-value>app</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>dbPassword</param-name>
+  		<param-value>app</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>jdbcDriverURL</param-name>
+  		<param-value>jdbc:derby</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>dbHostName</param-name>
+  		<param-value>localhost</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>dbPort</param-name>
+  		<param-value>1527</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>databaseName</param-name>
+  		<param-value>SITEFinanceDB</param-value>
+  	</init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>JdbcControllerAddevent</servlet-name>
+        <servlet-class>controller.JdbcControllerAddevent</servlet-class>
+        
+        <init-param>
+  		<param-name>jdbcClassName</param-name>
+  		<param-value>org.apache.derby.jdbc.ClientDriver</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>dbUserName</param-name>
+  		<param-value>app</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>dbPassword</param-name>
+  		<param-value>app</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>jdbcDriverURL</param-name>
+  		<param-value>jdbc:derby</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>dbHostName</param-name>
+  		<param-value>localhost</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>dbPort</param-name>
+  		<param-value>1527</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>databaseName</param-name>
+  		<param-value>SITEFinanceDB</param-value>
+  	</init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>ViewEvent</servlet-name>
+        <servlet-class>controller.ViewEvent</servlet-class>
+        
+        <init-param>
+  		<param-name>jdbcClassName</param-name>
+  		<param-value>org.apache.derby.jdbc.ClientDriver</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>dbUserName</param-name>
+  		<param-value>app</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>dbPassword</param-name>
+  		<param-value>app</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>jdbcDriverURL</param-name>
+  		<param-value>jdbc:derby</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>dbHostName</param-name>
+  		<param-value>localhost</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>dbPort</param-name>
+  		<param-value>1527</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>databaseName</param-name>
+  		<param-value>SITEFinanceDB</param-value>
+  	</init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>AccountController</servlet-name>
+        <servlet-class>controller.AccountController</servlet-class>
+        
+        <init-param>
+  		<param-name>jdbcClassName</param-name>
+  		<param-value>org.apache.derby.jdbc.ClientDriver</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>dbUserName</param-name>
+  		<param-value>app</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>dbPassword</param-name>
+  		<param-value>app</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>jdbcDriverURL</param-name>
+  		<param-value>jdbc:derby</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>dbHostName</param-name>
+  		<param-value>localhost</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>dbPort</param-name>
+  		<param-value>1527</param-value>
+  	</init-param>
+  	
+  	<init-param>
+  		<param-name>databaseName</param-name>
+  		<param-value>SITEFinanceDB</param-value>
+  	</init-param>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>JdbcControllerLogin</servlet-name>
+        <url-pattern>/JdbcControllerLogin</url-pattern>
+        <url-pattern>/processLogin</url-pattern>
+        <url-pattern>/showEventPage</url-pattern>
+        <url-pattern>/showYearSelect</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>JdbcControllerAddevent</servlet-name>
+        <url-pattern>/JdbcControllerAddevent</url-pattern>
+        <url-pattern>/backevent</url-pattern>
+        <url-pattern>/addevent</url-pattern>
+        <url-pattern>/deleteEvent</url-pattern>
+        <url-pattern>/editevent</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>ViewEvent</servlet-name>
+        <url-pattern>/ViewEvent</url-pattern>
+        <url-pattern>/addtransaction</url-pattern>
+        <url-pattern>/viewtransaction</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AccountController</servlet-name>
+        <url-pattern>/AccountController</url-pattern>
+        <url-pattern>/viewAccounts</url-pattern>
+        <url-pattern>/addAccount</url-pattern>
+    </servlet-mapping>
+    
+    <context-param>  
+    <param-name>Header</param-name>  
+    <param-value>Header</param-value>  
+  </context-param>  
+    
+    <context-param>  
+    <param-name>Footer</param-name>  
+    <param-value>Footer</param-value>  
+  </context-param>  
+    <session-config>
+        <session-timeout>
+            0
+        </session-timeout>
+    </session-config>
+     <welcome-file-list>
+        <welcome-file>logintest.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
